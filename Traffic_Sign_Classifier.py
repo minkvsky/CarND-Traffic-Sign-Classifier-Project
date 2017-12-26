@@ -284,7 +284,7 @@ model.add(Dense(units=43, activation='sigmoid', input_dim=84))
 
 model.summary()
 
-with open('/output/tuning_param/model_summary_{}.md'.format(model_ver), 'w') as f:
+with open('/output/model_summary_{}.md'.format(model_ver), 'w') as f:
     model.summary(print_fn=lambda x: f.write(x + '\n'))
 
 model.compile(loss='categorical_crossentropy',
@@ -308,17 +308,17 @@ model.compile(loss='categorical_crossentropy',
 
 # In[73]:
 
-epochs = 100
+epochs = 50
 
 from keras.callbacks import ModelCheckpoint
 checkpointer = ModelCheckpoint(filepath='my_model.h5', 
                                verbose=1, save_best_only=True)
 hist = model.fit(images_train, labels_train, 
           validation_data=(images_valid, labels_valid),
-          epochs=epochs, batch_size=20, callbacks=[checkpointer], verbose=0)
+          epochs=epochs, batch_size=50, callbacks=[checkpointer], verbose=0)
 
 ## TODO: Save the model as model.h5
-model.save('my_model.h5')
+model.save('/output/my_model.h5')
 
 
 # In[74]:
@@ -339,7 +339,7 @@ plt.title('model accuracy')
 plt.ylabel('accuracy')
 plt.xlabel('epoch')
 plt.legend(['train', 'val'], loc='upper left')
-plt.savefig('/output/tuning_param/model_acc_{}.jpg'.format(model_ver))
+plt.savefig('/output/model_acc_{}.jpg'.format(model_ver))
 plt.show()
 # summarize history for loss
 plt.plot(hist.history['loss'])
@@ -348,7 +348,7 @@ plt.title('model loss')
 plt.ylabel('loss')
 plt.xlabel('epoch')
 plt.legend(['train', 'val'], loc='upper left')
-plt.savefig('/output/tuning_param/model_loss_{}.jpg'.format(model_ver))
+plt.savefig('/output/model_loss_{}.jpg'.format(model_ver))
 plt.show()
 
 

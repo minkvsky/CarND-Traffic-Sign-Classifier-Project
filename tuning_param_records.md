@@ -7,3 +7,7 @@
 	- need dropout ,more understanding
 	- other kick overfiting?
 	- bigger batchsie?
+	- in fact more data is waiting
+# 2017-12-26-6-57(floydhub)
+	- 50 epoches, 40min
+	- need more epoches
