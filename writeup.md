@@ -90,9 +90,9 @@ My final model consisted of the following layers:
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
 To train the model, I used the following:
-    - optimizer:SGD with learning rate 0.01, decay 1e-6, momentum 0.9
-    - batch size:50
-    - epoches:30
+- optimizer:SGD with learning rate 0.01, decay 1e-6, momentum 0.9
+- batch size:50
+- epoches:30
 
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
@@ -136,7 +136,7 @@ The code for making predictions on my final model is located in the 11th cell of
 real result:Speed limit (60km/h)
 
 | Probability | Prediction |
-            |:-:|:-:|
+|:--:|:--:|
 | 0.9999997615814209 | Speed limit (60km/h) |
 | 1.321921274666238e-07 | Speed limit (50km/h) |
 | 1.2771315027748642e-07 | Speed limit (80km/h) |
@@ -145,7 +145,7 @@ real result:Speed limit (60km/h)
 real result:No entry
 
 | Probability | Prediction |
-            |:-:|:-:|
+|:-:|:-:|
 | 0.997314989566803 | No entry |
 | 0.0026032349560409784 | No passing |
 | 3.924541670130566e-05 | End of no passing |
@@ -154,7 +154,7 @@ real result:No entry
 real result:Speed limit (70km/h)
 
 | Probability | Prediction |
-            |:-:|:-:|
+|:-:|:-:|
 | 0.9999947547912598 | Speed limit (70km/h) |
 | 4.591095603245776e-06 | Speed limit (20km/h) |
 | 3.614752870362281e-07 | Speed limit (120km/h) |
@@ -163,7 +163,7 @@ real result:Speed limit (70km/h)
 real result:Stop
 
 | Probability | Prediction |
-            |:-:|:-:|
+|:-:|:-:|
 | 0.9999955892562866 | Stop |
 | 2.589440782685415e-06 | Speed limit (60km/h) |
 | 6.644673931077705e-07 | Speed limit (120km/h) |
@@ -172,7 +172,7 @@ real result:Stop
 real result:Turn left ahead
 
 | Probability | Prediction |
-            |:-:|:-:|
+|:-:|:-:|
 | 0.9984118938446045 | Turn left ahead |
 | 0.0011420466471463442 | Ahead only |
 | 0.000195750777493231 | Keep right |
