@@ -32,5 +32,11 @@
 # 2017-12-26-17-25
 	- still too large dropout?
 
-# 2017-12-26-19-28
-	- 
+# 2017-12-31-13-56
+	- yes over 93%
+	- maybe better after more epoches
+	- that is my result
+
+# 2017-12-31-17-50
+	- drop data augument from last version
+	- acc decrease almost 1%
