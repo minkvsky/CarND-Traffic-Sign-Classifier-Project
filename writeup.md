@@ -142,6 +142,7 @@ real result:Speed limit (60km/h)
 | 1.2771315027748642e-07 | Speed limit (80km/h) |
 | 1.1963314783258738e-08 | Speed limit (30km/h) |
 | 6.1064651113440505e-09 | Keep right |
+
 real result:No entry
 
 | Probability | Prediction |
@@ -151,6 +152,7 @@ real result:No entry
 | 3.924541670130566e-05 | End of no passing |
 | 2.5110048227361403e-05 | Vehicles over 3.5 metric tons prohibited |
 | 1.500734197179554e-05 | End of all speed and passing limits |
+
 real result:Speed limit (70km/h)
 
 | Probability | Prediction |
@@ -160,6 +162,7 @@ real result:Speed limit (70km/h)
 | 3.614752870362281e-07 | Speed limit (120km/h) |
 | 7.330367424174256e-08 | Speed limit (50km/h) |
 | 7.078256913928271e-08 | Speed limit (80km/h) |
+
 real result:Stop
 
 | Probability | Prediction |
@@ -169,6 +172,7 @@ real result:Stop
 | 6.644673931077705e-07 | Speed limit (120km/h) |
 | 4.6931458541621396e-07 | Keep left |
 | 2.2196628890469583e-07 | Keep right |
+
 real result:Turn left ahead
 
 | Probability | Prediction |
